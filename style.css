@@ -1,0 +1,127 @@
+/* Variables for Light and Dark Mode */
+:root {
+    --light-bg-color: #fff;
+    --light-text-color: #343a40;
+    --dark-bg-color: #2e2e2e; /* Dark gray background */
+    --dark-text-color: #e0e0e0;
+    --dark-navbar-footer-color: #1a1a1a; /* Darker gray for navbar and footer */
+    --dark-table-header-color: #3b3b3b; /* Darker header color for table */
+    --dark-table-border-color: #555555;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-custom {
+    background-color: #343a40; /* Darker background */
+    transition: background-color 0.3s;
+}
+
+.navbar-custom .nav-link {
+    color: #f8f9fa;
+    transition: color 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107;
+}
+
+.active-nav {
+    border-bottom: 2px solid #ffc107;
+}
+
+.description {
+    max-width: 90%;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Clock Styling */
+#digital-clock {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg-color) !important;
+    color: var(--dark-text-color) !important;
+}
+
+.dark-mode .navbar-custom {
+    background-color: var(--dark-navbar-footer-color) !important;
+}
+
+.dark-mode footer {
+    background-color: var(--dark-navbar-footer-color) !important;
+    color: var(--dark-text-color) !important;
+}
+
+.dark-mode .card, 
+.dark-mode .media, 
+.dark-mode .media-body {
+    background-color: var(--dark-navbar-footer-color) !important;
+    color: var(--dark-text-color) !important;
+}
+
+.dark-mode .description {
+    background-color: var(--dark-navbar-footer-color) !important;
+    color: var(--dark-text-color) !important;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .table {
+    background-color: #2a2a2a; /* Dark gray background for tables in dark mode */
+    color: #e0e0e0;            /* Light text color for tables in dark mode */
+}
+
+body.dark-mode .table th {
+    background-color: #343a40; /* Darker gray background for table headers */
+    color: #ffffff;            /* White text for headers */
+}
+
+body.dark-mode .table tbody{
+    background-color: #3a3a3a; /* Slightly lighter gray for hovered rows */
+}
+
+.modal-content {
+    background-color: #ffffff; /* Default modal background */
+    color: #343a40; /* Default text color */
+}
+
+.dark-mode .modal-content {
+    background-color: #495057; /* Dark modal background */
+    color: #f8f9fa; /* Light text for dark mode */
+}
+
+.dark-mode .modal-header {
+    border-bottom: 1px solid #6c757d; /* Darker border for header */
+}
+
+.dark-mode .modal-footer {
+    border-top: 1px solid #6c757d; /* Darker border for footer */
+}
+
+input, textarea {
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+.dark-mode input, .dark-mode textarea {
+    background-color: #495057; /* Darker background for input */
+    color: #f8f9fa; /* Light text color */
+    border: 1px solid #6c757d; /* Darker border */
+}
+
+.dark-mode input:focus, .dark-mode textarea:focus {
+    background-color: #6c757d; /* Focused background for input */
+    color: #f8f9fa; /* Light text color */
+    border-color: #ffc107; /* Highlight border color */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Highlight shadow */
+}

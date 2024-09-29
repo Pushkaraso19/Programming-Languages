@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <title>Programming Languages</title>
+    </head>
+
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar hnf navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Programming Languages</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#description">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#languages" data-toggle="scroll">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#types" data-toggle="scroll">Types</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Form.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <!-- Dark Mode Toggle Button -->
+                            <button id="dark-mode-toggle" class="btn btn-outline-light">Dark Mode</button>
+                        </li>
+                        <li class="nav-item"></li>
+                            <!-- Digital Clock -->
+                            <span class="px-3 pt-1" id="digital-clock"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Description Section -->
+        <section id="description">
+            <div class="container my-5 pt-3">
+                <div class="description bg-white pt-4 rounded shadow-sm">
+                    <p class="lead">A programming language is a set of instructions written by a programmer to deliver instructions to the computer to perform and accomplish a task. This set of instructions is usually viewed as incomprehensible code structured following a definite programming language syntax.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <div class="container mb-5 languages" >
+                <div class="container mb-5">
+                    <h3 class="pb-2">Different Languages:</h3>
+                    <ol class="list-unstyled">
+                        <li class="mb-4">
+                            <div class="media bg-white p-4 rounded shadow-sm">
+                                <img class="logo mr-3" src="./images/icons8-python-48.png" alt="Python Logo">
+                                <div class="media-body">
+                                    <h3 class="mt-0"><u>Python:</u></h3>
+                                    <p>Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, dynamic typing, dynamic data types, and classes. It's also portable, extensible, and easy to read and code, which is a big reason it's popular.</p>
+                                    <h4>Related Links: <a href="https://www.python.org/">Python Website</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-4">
+                            <div class="media bg-white p-4 rounded shadow-sm">
+                                <img class="logo mr-3" src="./images/icons8-javascript-48.png" alt="JavaScript Logo">
+                                <div class="media-body">
+                                    <h3 class="mt-0"><u>JavaScript:</u></h3>
+                                    <p>Many developers use JavaScript because its features can include integration with browsers, servers, mobile devices, cloud software, containers, microcontrollers, and regular updates to keep the language relevant for modern programmers. It also has good browser functionality, cross-platform usability, and event-driven programming, making it a suitable tool for programmers.</p>
+                                    <h4>Related Links: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript MDN Document</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-4">
+                            <div class="media bg-white p-4 rounded shadow-sm">
+                                <img class="logo mr-3" src="images/icons8-java-logo-48.png" alt="JAVA Logo">
+                                <div class="media-body">
+                                    <h3 class="mt-0"><u>JAVA:</u></h3>
+                                    <p>Java is a versatile language that allows you to create programs that can work on any Java-enabled platform. Another feature of this language is the Java Virtual Machine software, which makes programming with Java easier across different environments and with various hardware.</p>
+                                    <h4>Related Links: <a href="https://www.java.com/en/">JAVA Website</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="types">
+                <div class="container mb-5" >
+                    <h3>There are also Types in these Languages</h3>
+                    <table class="table table-bordered bg-light">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Procedural programming languages</th>
+                                <th>Functional programming languages</th>
+                                <th>Object-oriented programming languages (OOP)</th>
+                                <th>Scripting languages</th>
+                                <th>Logic programming languages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A procedural language follows a sequence of statements or commands in order to achieve a desired output. Each series of steps is called a procedure, and a program written in one of these languages will have one or more procedures within it.</td>
+                                <td>Rather than focusing on the execution of statements, functional languages focus on the output of mathematical functions and evaluations. Each function–a reusable module of code–performs a specific task and returns a result. The result will vary depending on what data you input into the function.</td>
+                                <td>This type of language treats a program as a group of objects composed of data and program elements, known as attributes and methods. Objects can be reused within a program or in other programs. This makes it a popular language type for complex programs, as code is easier to reuse and scale.</td>
+                                <td>Programmers use scripting languages to automate repetitive tasks, manage dynamic web content, or support processes in larger applications.</td>
+                                <td>Instead of telling a computer what to do, a logic programming language expresses a series of facts and rules to instruct the computer on how to make decisions.</td>
+                            </tr>
+                            <tr>
+                                <td>Eg: C & C++, Java</td>
+                                <td>Eg: Scala, Erlang</td>
+                                <td>Eg: Java, Python</td>
+                                <td>Eg: PHP, Ruby</td>
+                                <td>Eg: Prolog, Absys</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white py-2" id="footer">
+            <div class="container text-center">
+                <h4 class="mt-2">© Programming Languages</h4>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+
+</html>
